@@ -5,8 +5,14 @@ variable "GOOGLE_PROJECT" {
 
 variable "GOOGLE_REGION" {
   type        = string
-  default     = "us-central1-c"
+  default     = "europe-central2"
   description = "GCP region to use"
+}
+
+variable "GOOGLE_ZONE" {
+  type        = string
+  default     = "europe-central2-a"
+  description = "GCP zone to use"
 }
 
 variable "GKE_MACHINE_TYPE" {
@@ -23,12 +29,12 @@ variable "GKE_NUM_NODES" {
 
 variable "GKE_CLUSTER_NAME" {
   type        = string
-  default     = "main"
+  default     = "demo5"
   description = "GKE cluster name"
 }
 
 variable "GKE_POOL_NAME" {
   type        = string
-  default     = "main"
+  default     = "demo5"
   description = "GKE pool name"
 }
